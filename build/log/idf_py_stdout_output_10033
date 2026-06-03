@@ -1,0 +1,85 @@
+-- Existing sdkconfig '/home/frank/dashboard-esp32/sdkconfig' renamed to '/home/frank/dashboard-esp32/sdkconfig.old'.
+-- Found Git: /usr/bin/git (found version "2.54.0")
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/frank/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/frank/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/frank/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: non è un repository Git (né lo è alcun genitore fino al punto di mount /)
+Mi fermo al limite del filesystem (l'opzione GIT_DISCOVERY_ACROSS_FILESYSTEM non è impostata).'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32p4
+NOTICE: Dependencies lock doesn't exist, solving dependencies.
+NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp32_p4_function_ev_board for dependency "espressif/esp32_p4_function_ev_board"(introduced by component "bsp_extra")
+NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_lcd_jd9365 for dependency "esp_lcd_jd9365"(introduced by component "esp32_p4_function_ev_board")
+NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_lcd_touch_gsl3680 for dependency "esp_lcd_touch_gsl3680"(introduced by component "esp32_p4_function_ev_board")
+NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_cam_sensor for dependency "esp_cam_sensor"(introduced by component "esp_video")
+NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp32_p4_function_ev_board for dependency "espressif/esp32_p4_function_ev_board"(introduced by component "bsp_extra")
+NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_lcd_jd9365 for dependency "esp_lcd_jd9365"(introduced by component "esp32_p4_function_ev_board")
+NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_lcd_touch_gsl3680 for dependency "esp_lcd_touch_gsl3680"(introduced by component "esp32_p4_function_ev_board")
+NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_cam_sensor for dependency "esp_cam_sensor"(introduced by component "esp_video")
+....NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp32_p4_function_ev_board for dependency "espressif/esp32_p4_function_ev_board", specified in /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/bsp_extra/idf_component.yml
+.....NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_lcd_jd9365 for dependency "esp_lcd_jd9365"(introduced by component "espressif/esp32_p4_function_ev_board"), specified in /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/bsp_extra/idf_component.yml
+NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_lcd_touch_gsl3680 for dependency "esp_lcd_touch_gsl3680"(introduced by component "espressif/esp32_p4_function_ev_board"), specified in /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/bsp_extra/idf_component.yml
+.........................NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_lcd_jd9365 for dependency "esp_lcd_jd9365", specified in /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp32_p4_function_ev_board/idf_component.yml
+NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_lcd_touch_gsl3680 for dependency "esp_lcd_touch_gsl3680", specified in /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp32_p4_function_ev_board/idf_component.yml
+..NOTICE: Using component placed at /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_cam_sensor for dependency "esp_cam_sensor", specified in /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_video/idf_component.yml
+.....NOTICE: Updating lock file at /home/frank/dashboard-esp32/dependencies.lock
+NOTICE: Processing 15 dependencies:
+NOTICE: [1/15] chmorgan/esp-audio-player (1.0.7)
+NOTICE: [2/15] chmorgan/esp-file-iterator (1.0.0)
+NOTICE: [3/15] chmorgan/esp-libhelix-mp3 (1.0.3)
+NOTICE: [4/15] espressif/cmake_utilities (0.5.3)
+NOTICE: [5/15] espressif/esp_codec_dev (1.3.2)
+NOTICE: [6/15] espressif/esp_h264 (1.3.6)
+NOTICE: [7/15] espressif/esp_ipa (0.2.0)
+NOTICE: [8/15] espressif/esp_lcd_ek79007 (1.0.4)
+NOTICE: [9/15] espressif/esp_lcd_ili9881c (1.1.0)
+NOTICE: [10/15] espressif/esp_lcd_touch (1.2.1)
+NOTICE: [11/15] espressif/esp_lcd_touch_gt911 (1.2.0~2)
+NOTICE: [12/15] espressif/esp_lvgl_port (2.4.4)
+NOTICE: [13/15] espressif/esp_sccb_intf (0.0.8)
+NOTICE: [14/15] lvgl/lvgl (9.2.2)
+NOTICE: [15/15] idf (5.4.0)
+-- CONFIG_ESP32P4_REV_MIN_FULL not defined, using default version
+-- Project sdkconfig file /home/frank/dashboard-esp32/sdkconfig
+Loading defaults file /home/frank/dashboard-esp32/sdkconfig.defaults...
+-- Adding linker script /home/frank/esp/esp-idf/components/riscv/ld/rom.api.ld
+-- Found Python3: /home/frank/.espressif/python_env/idf5.4_py3.14_env/bin/python (found version "3.14.5") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "dashboard_esp32" version: 1
+-- Adding linker script /home/frank/dashboard-esp32/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/frank/dashboard-esp32/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/frank/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.ld
+-- Adding linker script /home/frank/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.api.ld
+-- Adding linker script /home/frank/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.rvfp.ld
+-- Adding linker script /home/frank/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.wdt.ld
+-- Adding linker script /home/frank/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.systimer.ld
+-- Adding linker script /home/frank/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.version.ld
+-- Adding linker script /home/frank/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.newlib.ld
+-- Adding linker script /home/frank/esp/esp-idf/components/soc/esp32p4/ld/esp32p4.peripherals.ld
+-- LVGL version: 9.2.2
+-- ESP_LCD_JD9365: 1.0.2
+-- ESP_LCD_EK79007: 1.0.4
+-- ESP_CAM_SENSOR: 0.9.0
+-- ESP_IPA: 0.2.0
+-- ESP_VIDEO: 0.8.0
+-- ESP_LCD_JD9165: 1.0.2
+-- Components: app_trace app_update bootloader bootloader_support bsp_extra bt chmorgan__esp-audio-player chmorgan__esp-file-iterator chmorgan__esp-libhelix-mp3 cmock console cxx driver efuse esp-tls esp32_p4_function_ev_board esp_adc esp_app_format esp_bootloader_format esp_cam_sensor esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_lcd_jd9365 esp_lcd_touch_gsl3680 esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_video esp_wifi espcoredump espressif__cmake_utilities espressif__esp_codec_dev espressif__esp_h264 espressif__esp_ipa espressif__esp_lcd_ek79007 espressif__esp_lcd_ili9881c espressif__esp_lcd_jd9165 espressif__esp_lcd_touch espressif__esp_lcd_touch_gt911 espressif__esp_lvgl_port espressif__esp_sccb_intf esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lvgl__lvgl lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table protobuf-c protocomm pthread riscv rt sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: /home/frank/esp/esp-idf/components/app_trace /home/frank/esp/esp-idf/components/app_update /home/frank/esp/esp-idf/components/bootloader /home/frank/esp/esp-idf/components/bootloader_support /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/bsp_extra /home/frank/esp/esp-idf/components/bt /home/frank/dashboard-esp32/managed_components/chmorgan__esp-audio-player /home/frank/dashboard-esp32/managed_components/chmorgan__esp-file-iterator /home/frank/dashboard-esp32/managed_components/chmorgan__esp-libhelix-mp3 /home/frank/esp/esp-idf/components/cmock /home/frank/esp/esp-idf/components/console /home/frank/esp/esp-idf/components/cxx /home/frank/esp/esp-idf/components/driver /home/frank/esp/esp-idf/components/efuse /home/frank/esp/esp-idf/components/esp-tls /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp32_p4_function_ev_board /home/frank/esp/esp-idf/components/esp_adc /home/frank/esp/esp-idf/components/esp_app_format /home/frank/esp/esp-idf/components/esp_bootloader_format /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_cam_sensor /home/frank/esp/esp-idf/components/esp_coex /home/frank/esp/esp-idf/components/esp_common /home/frank/esp/esp-idf/components/esp_driver_ana_cmpr /home/frank/esp/esp-idf/components/esp_driver_cam /home/frank/esp/esp-idf/components/esp_driver_dac /home/frank/esp/esp-idf/components/esp_driver_gpio /home/frank/esp/esp-idf/components/esp_driver_gptimer /home/frank/esp/esp-idf/components/esp_driver_i2c /home/frank/esp/esp-idf/components/esp_driver_i2s /home/frank/esp/esp-idf/components/esp_driver_isp /home/frank/esp/esp-idf/components/esp_driver_jpeg /home/frank/esp/esp-idf/components/esp_driver_ledc /home/frank/esp/esp-idf/components/esp_driver_mcpwm /home/frank/esp/esp-idf/components/esp_driver_parlio /home/frank/esp/esp-idf/components/esp_driver_pcnt /home/frank/esp/esp-idf/components/esp_driver_ppa /home/frank/esp/esp-idf/components/esp_driver_rmt /home/frank/esp/esp-idf/components/esp_driver_sdio /home/frank/esp/esp-idf/components/esp_driver_sdm /home/frank/esp/esp-idf/components/esp_driver_sdmmc /home/frank/esp/esp-idf/components/esp_driver_sdspi /home/frank/esp/esp-idf/components/esp_driver_spi /home/frank/esp/esp-idf/components/esp_driver_touch_sens /home/frank/esp/esp-idf/components/esp_driver_tsens /home/frank/esp/esp-idf/components/esp_driver_uart /home/frank/esp/esp-idf/components/esp_driver_usb_serial_jtag /home/frank/esp/esp-idf/components/esp_eth /home/frank/esp/esp-idf/components/esp_event /home/frank/esp/esp-idf/components/esp_gdbstub /home/frank/esp/esp-idf/components/esp_hid /home/frank/esp/esp-idf/components/esp_http_client /home/frank/esp/esp-idf/components/esp_http_server /home/frank/esp/esp-idf/components/esp_https_ota /home/frank/esp/esp-idf/components/esp_https_server /home/frank/esp/esp-idf/components/esp_hw_support /home/frank/esp/esp-idf/components/esp_lcd /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_lcd_jd9365 /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_lcd_touch_gsl3680 /home/frank/esp/esp-idf/components/esp_local_ctrl /home/frank/esp/esp-idf/components/esp_mm /home/frank/esp/esp-idf/components/esp_netif /home/frank/esp/esp-idf/components/esp_netif_stack /home/frank/esp/esp-idf/components/esp_partition /home/frank/esp/esp-idf/components/esp_phy /home/frank/esp/esp-idf/components/esp_pm /home/frank/esp/esp-idf/components/esp_psram /home/frank/esp/esp-idf/components/esp_ringbuf /home/frank/esp/esp-idf/components/esp_rom /home/frank/esp/esp-idf/components/esp_security /home/frank/esp/esp-idf/components/esp_system /home/frank/esp/esp-idf/components/esp_timer /home/frank/esp/esp-idf/components/esp_vfs_console /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp_video /home/frank/esp/esp-idf/components/esp_wifi /home/frank/esp/esp-idf/components/espcoredump /home/frank/dashboard-esp32/managed_components/espressif__cmake_utilities /home/frank/dashboard-esp32/managed_components/espressif__esp_codec_dev /home/frank/dashboard-esp32/managed_components/espressif__esp_h264 /home/frank/dashboard-esp32/managed_components/espressif__esp_ipa /home/frank/dashboard-esp32/managed_components/espressif__esp_lcd_ek79007 /home/frank/dashboard-esp32/managed_components/espressif__esp_lcd_ili9881c /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/espressif__esp_lcd_jd9165 /home/frank/dashboard-esp32/managed_components/espressif__esp_lcd_touch /home/frank/dashboard-esp32/managed_components/espressif__esp_lcd_touch_gt911 /home/frank/dashboard-esp32/managed_components/espressif__esp_lvgl_port /home/frank/dashboard-esp32/managed_components/espressif__esp_sccb_intf /home/frank/esp/esp-idf/components/esptool_py /home/frank/esp/esp-idf/components/fatfs /home/frank/esp/esp-idf/components/freertos /home/frank/esp/esp-idf/components/hal /home/frank/esp/esp-idf/components/heap /home/frank/esp/esp-idf/components/http_parser /home/frank/esp/esp-idf/components/idf_test /home/frank/esp/esp-idf/components/ieee802154 /home/frank/esp/esp-idf/components/json /home/frank/esp/esp-idf/components/log /home/frank/dashboard-esp32/managed_components/lvgl__lvgl /home/frank/esp/esp-idf/components/lwip /home/frank/dashboard-esp32/main /home/frank/esp/esp-idf/components/mbedtls /home/frank/esp/esp-idf/components/mqtt /home/frank/esp/esp-idf/components/newlib /home/frank/esp/esp-idf/components/nvs_flash /home/frank/esp/esp-idf/components/nvs_sec_provider /home/frank/esp/esp-idf/components/openthread /home/frank/esp/esp-idf/components/partition_table /home/frank/esp/esp-idf/components/protobuf-c /home/frank/esp/esp-idf/components/protocomm /home/frank/esp/esp-idf/components/pthread /home/frank/esp/esp-idf/components/riscv /home/frank/esp/esp-idf/components/rt /home/frank/esp/esp-idf/components/sdmmc /home/frank/esp/esp-idf/components/soc /home/frank/esp/esp-idf/components/spi_flash /home/frank/esp/esp-idf/components/spiffs /home/frank/esp/esp-idf/components/tcp_transport /home/frank/esp/esp-idf/components/ulp /home/frank/esp/esp-idf/components/unity /home/frank/esp/esp-idf/components/usb /home/frank/esp/esp-idf/components/vfs /home/frank/esp/esp-idf/components/wear_levelling /home/frank/esp/esp-idf/components/wifi_provisioning /home/frank/esp/esp-idf/components/wpa_supplicant
+-- Configuring done (20.0s)
+-- Generating done (0.9s)
+-- Build files have been written to: /home/frank/dashboard-esp32/build

@@ -1,0 +1,31 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/frank/dashboard-esp32/build/bootloader/esp-idf/esptool_py && /home/frank/.espressif/python_env/idf5.4_py3.14_env/bin/python /home/frank/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 /home/frank/dashboard-esp32/build/bootloader/bootloader.bin
+Bootloader binary size 0x5af0 bytes. 0x510 bytes (5%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+info: INFO: Symbol BSP_I2S_NUM defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/esp32_p4_function_ev_board/Kconfig:30
+    /home/frank/JC8012P4A1C_I_W_Y/1-Demo/idf-examples/common_components/bsp_extra/Kconfig:2
+[7/10] Linking CXX executable dashboard_esp32.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32p4 image...
+Merged 3 ELF sections
+Successfully created esp32p4 image.
+Generated /home/frank/dashboard-esp32/build/dashboard_esp32.bin
+[9/10] cd /home/frank/dashboard-esp32/build/esp-idf/esptool_py && /home/frank/.espressif/python_env/idf5.4_py3.14_env/bin/python /home/frank/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/frank/dashboard-esp32/build/partition_table/partition-table.bin /home/frank/dashboard-esp32/build/dashboard_esp32.bin
+dashboard_esp32.bin binary size 0xb4410 bytes. Smallest app partition is 0x800000 bytes. 0x74bbf0 bytes (91%) free.
+[9/10] cd /home/frank/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/frank/esp/esp-idf -D "SERIAL_TOOL=/home/frank/.espressif/python_env/idf5.4_py3.14_env/bin/python;;/home/frank/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32p4" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/frank/dashboard-esp32/build -P /home/frank/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32p4 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x2000 bootloader/bootloader.bin 0x10000 dashboard_esp32.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.11.0
+Serial port /dev/ttyUSB0
+
+A fatal error occurred: Could not open /dev/ttyUSB0, the port is busy or doesn't exist.
+([Errno 11] Could not exclusively lock port /dev/ttyUSB0: [Errno 11] Resource temporarily unavailable)
+
+FAILED: [code=1] CMakeFiles/flash /home/frank/dashboard-esp32/build/CMakeFiles/flash 
+cd /home/frank/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/frank/esp/esp-idf -D "SERIAL_TOOL=/home/frank/.espressif/python_env/idf5.4_py3.14_env/bin/python;;/home/frank/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32p4" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/frank/dashboard-esp32/build -P /home/frank/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.
