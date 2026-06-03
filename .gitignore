@@ -1,3 +1,17 @@
-**/squareline/backup/**
-**/squareline/autosave/**
-components/lvgl/**
+# ESP-IDF build
+build/
+sdkconfig.old
+
+# Componenti scaricati automaticamente
+managed_components/
+
+# File di lock (rigenerati automaticamente)
+dependencies.lock
+
+# VS Code
+.vscode/
+
+# Sistema
+.DS_Store
+*.swp
+*~
